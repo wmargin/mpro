@@ -1,0 +1,164 @@
+/* pages/listcon/listcon.wxss */
+/* 字体：STHeiti */
+text {
+    font-family: STHeiti;
+}
+
+.list_img {
+    width: 100%;
+    height: 400rpx;
+}
+
+.biaoti {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20rpx;
+    background-color: white;
+    margin-top: -10rpx;
+}
+
+.biaoti text {
+    font-family: STHeiti;
+    font-size: 36rpx;
+    letter-spacing: 4rpx;
+}
+
+/*  */
+.pop {
+    margin-top: 20rpx;
+    width: 100%;
+    background-color: white;
+}
+
+/* 点击弹出区域 */
+.popcon {
+    display: flex;
+    align-items: center;
+    padding-left: 20rpx;
+    padding-right: 30rpx;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+    justify-content: space-between;
+}
+
+.popcon-te {
+    font-family: STHeiti;
+    font-size: 30rpx;
+    color: #666;
+}
+
+.shijian {
+    font-size: 20rpx;
+    padding-left: 200rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40rpx;
+    color: #666;
+}
+
+/* 教师展示 */
+.zhanshi {
+    margin-top: 20rpx;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.zh-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30rpx 0;
+}
+
+.mingpian {
+    margin-left: -60rpx;
+    padding-left: 90rpx;
+    padding-top: 15rpx;
+    padding-right: 20rpx;
+    width: 70%;
+    height: 200rpx;
+    border-radius: 10rpx;
+    box-shadow: 0rpx 0rpx 30rpx #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.mingpian text {
+    margin-bottom: 15rpx;
+}
+
+.xiang {
+    font-size: 28rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.mingpian text:nth-child(2) {
+    color: #cccccc;
+    font-size: 24rpx;
+}
+
+.mingpian text:nth-child(3) {
+    font-size: 24rpx;
+    color: #888;
+}
+
+/* 课程简介 */
+.zh-jianjie {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40rpx;
+}
+
+.kejian {
+    margin-left: 40rpx;
+    font-size: 34rpx;
+    font-weight: 700;
+}
+
+/* 展开收起 */
+.bg-white {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.pay-hint-content {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20rpx;
+    font-size: 26rpx;
+    line-height: 40rpx;
+    color: #444;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ellipsis_text {
+    margin-top: 30rpx;
+    width: 100%;
+    font-size: 22rpx;
+    color: #888;
+    text-align: center
+}

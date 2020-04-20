@@ -1,0 +1,99 @@
+
+<view>
+  <van-nav-bar fixed border left-text="首页" right-text="" bind:click-left="onClickLeft" bind:click-right="onClickRight" safe-area-inset-top />
+  <view style="height:{{CustomBar}}px"></view>
+
+  <!-- 轮播图 -->
+  <view class="swiper-container">
+    <swiper autoplay="{{true}}" previous-margin='0px' next-margin='0px' bindchange="swiperChange" circular style='height:400rpx;'>
+      <swiper-item wx:for='{{imgList}}' wx:key='index'>
+        <image class='le-img ' bindload='getHeight' src='{{item}}' style='height:400rpx;'></image>
+      </swiper-item>
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{imgList}}" wx:key="index">
+        <view class="dot{{index == nowIdx ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+  <!-- 机构简介 -->
+  <view class="jianjie">
+    <view class="tou">
+      <image class="" src="../../image/head.jpg" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view class="name">
+      <text class="text" selectable="false" space="false" decode="false">误人子弟</text>
+    </view>
+    <!-- 机构介绍 -->
+    <view class="xiang">
+      <text class="tu iconfont iconjiaoyu-" selectable="false" space="false" decode="false"></text>
+      <text class="jieshao" selectable="false" space="false" decode="false">
+        可实现会员服务预约、服务计划、会员卡管理、客户裂变、分销等
+      </text>
+      <text class="jiantou iconfont iconjiantou" selectable="false" space="false" decode="false"></text>
+    </view>
+    <!-- 分割线 -->
+    <view class="divider">
+      <van-divider />
+    </view>
+    <!-- 地址电话 -->
+    <view class="adress">
+      <view class="ad">
+        <text class="iconfont iconweizhi" selectable="false" space="false" decode="false"></text>
+        <text class="ress" selectable="false" space="false" decode="false">山西省大同市大学大学清和苑</text>
+      </view>
+      <view class="te">
+        <text class="iconfont icondianhua" selectable="false" space="false" decode="false"></text>
+        <text class="ress" selectable="false" space="false" decode="false">18235275503</text>
+      </view>
+    </view>
+  </view>
+  <!-- 公告栏 -->
+  <view class="gonggao">
+    <van-notice-bar text="{{ text }}" speed="{{speedValue}}" mode="closeable" backgroundColor="white" color="#999" left-icon="//img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png" />
+  </view>
+  <!-- gird -->
+  <view class="gird">
+    <!-- 1 -->
+    <view class="gird-item">
+      <view>
+        <icon name="iconchangyongmoban" size="50"></icon>
+      </view>
+      <text class="biaoxia" selectable="false" space="false" decode="false">公告</text>
+    </view>
+    <!-- 2 -->
+    <view class="gird-item">
+      <view>
+        <icon name="iconbaogao" size="50"></icon>
+      </view>
+      <text class="biaoxia" selectable="false" space="false" decode="false">预约</text>
+    </view>
+    <!-- 3 -->
+    <view class="gird-item">
+      <view>
+        <icon name="iconziyuan" size="50"></icon>
+      </view>
+      <text class="biaoxia" selectable="false" space="false" decode="false">公告</text>
+    </view>
+  </view>
+  <!-- 机构环境 -->
+  <view class="jigou">
+    <text class="jite">机构环境</text>
+    <view class="im">
+      <image mode="spaceFill" class="zhan" src="https://ftp.bmp.ovh/imgs/2020/04/b44a118b92d17cbe.jpg"></image>
+      <image mode="spaceFill" class="zhan" src="https://ftp.bmp.ovh/imgs/2020/04/c381ec4cf452ee50.jpg"></image>
+      <image mode="spaceFill" class="zhan" src="https://ftp.bmp.ovh/imgs/2020/04/c381ec4cf452ee50.jpg"></image>
+     
+      <image mode="spaceFill" class="zhan" src="https://ftp.bmp.ovh/imgs/2020/04/b44a118b92d17cbe.jpg"></image>
+    </view>
+  </view>
+  <!-- 底部tar -->
+ 	<view style="width:100%; height:200rpx">
+	</view>
+	<van-tabbar active="{{ active }}" bind:change="onChange" border="true">
+		<van-tabbar-item icon="home-o">首页</van-tabbar-item>
+		<van-tabbar-item icon="search">预约</van-tabbar-item>
+		<van-tabbar-item icon="friends-o">品牌</van-tabbar-item>
+		<van-tabbar-item icon="setting-o">我的</van-tabbar-item>
+	</van-tabbar>
+</view>

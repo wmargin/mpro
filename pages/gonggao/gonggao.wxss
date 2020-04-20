@@ -1,0 +1,17 @@
+/* pages/gonggao/gonggao.wxss */
+.gong {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.xqing {
+  padding: 25rpx;
+  color: #666;
+  font-family: YouYuan;
+  font-weight: 500;
+  letter-spacing: 5rpx;
+  text-indent: 2em;
+  line-height: 40rpx;
+  border-bottom: 1px solid #777;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}

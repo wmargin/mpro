@@ -1,0 +1,58 @@
+/* pages/list/list.wxss */
+.item {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 10rpx;
+  padding-top: 30rpx;
+  background-color: white;
+  margin-bottom: -40rpx;
+}
+.tabs-item {
+  width: 100%;
+  display: flex;
+  /* border-bottom: 1px solid #999999; */
+}
+.tabs-item .list-img {
+  width:35%;
+  height: 190rpx;
+}
+.divi {
+  margin-top: -5rpx;
+}
+
+.item .list-text {
+  height: 190rpx;
+  font-family:STXihei ;
+  width: 65%;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item .list-text .kem {
+  color: black;
+  font-size: 35rpx;
+  font-weight: 500;
+  letter-spacing: 3rpx;
+}
+.item .list-text .kejian {
+  width: 90%;
+  font-size: 25rpx;
+  color: #666;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.item .list-text .keshi {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.toux {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

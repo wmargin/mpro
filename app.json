@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/listcon/listcon",
+    "pages/list/list",
+    "pages/index/index",
+    
+    
+    
+    "pages/gonggao/gonggao"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "icon": "./iconfont/iconfont",
+    "van-nav-bar": "./miniprogram_npm/vant-weapp/nav-bar/index",
+    "van-tabbar": "./miniprogram_npm/vant-weapp/tabbar/index",
+    "van-tabbar-item": "./miniprogram_npm/vant-weapp/tabbar-item/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}
